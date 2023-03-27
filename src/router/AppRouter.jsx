@@ -5,7 +5,7 @@ import { GlobalStyles } from "../styles/Global.styles";
 import Footer from "../components/footer/Footer";
 import Home from "../pages/home/Home";
 import Login from "../pages/login/Login";
-import Register from "../pages/register/Register";
+
 import PrivateRouter from "./PrivateRouter";
 import Detail from "../pages/detail/Detail";
 import About from "../pages/about/About";
@@ -24,13 +24,6 @@ const AppRouter = ({ myTheme, setMyTheme }) => {
           path="/login"
           element={<Login setCurrentUser={setCurrentUser} />}
         />
-        <Route path="/register" element={<Register />} />
-        {/* <Route path="/about" element={<PrivateRouter />}>
-          <Route path="" element={<About />} />
-        </Route>
-        <Route path="/detail" element={<PrivateRouter />}>
-          <Route path="" element={<Detail />} />
-        </Route> */}
 
         <Route element={<PrivateRouter />}>
           <Route path="/about" element={<About />} />

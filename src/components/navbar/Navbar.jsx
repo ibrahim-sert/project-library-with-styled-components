@@ -29,7 +29,6 @@ const Navbar = ({ currentUser, setCurrentUser }) => {
           </MenuLink>
         ) : (
           <>
-            <MenuLink to="/register">Register</MenuLink>
             <MenuLink to="/login">Login</MenuLink>
           </>
         )}
